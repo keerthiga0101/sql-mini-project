@@ -1,0 +1,6 @@
+BEGIN
+INSERT INTO energy_data
+VALUES (99, DATE '2026-02-01', 'Solar', -50, 80, 'Chennai'); EXCEPTION
+WHEN OTHERS THEN
+DBMS_OUTPUT.PUT_LINE('Error caught: ' || SQLERRM); END;
+/
